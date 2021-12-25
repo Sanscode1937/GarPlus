@@ -1,0 +1,18 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Oh ... Would ya look at that. I guess I overdid it, huh? Can't believe my body's really back there.              Crazy..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Well. I can't stay like this forever. Even if our time was short... Let's end things off with a bang, little man."
+		}
+	]
+}

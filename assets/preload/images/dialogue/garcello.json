@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		10,
+		-30
+	],
+	"scale": 1.45,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "garcello0",
+			"idle_name": "garcello0"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "excited",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "garcellotired0",
+			"idle_name": "garcellotired0"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "pissed",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "garcellodead0",
+			"idle_name": "garcellodead0"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "shocked",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "garcelloghosty0",
+			"idle_name": "garcelloghosty0"
+		}
+	],
+	"image": "gardialogue"
+}

@@ -1,0 +1,102 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What's up, little man?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Did the smoke catch your attention?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bee bop"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yeah, it's pretty cool. You should try it out."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep bo"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Are ya sure? Come on..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep bo"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hm..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Tell you what\\nIf you beat me in a friendly little rap battle, I'll get off your case."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sound cool, little man?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "beep bo bop!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Heh, that got you hyped up. It's settled then\\nAs long as you don't mind me smoking a bit"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Helps calm the nerves, y'know?"
+		}
+	]
+}

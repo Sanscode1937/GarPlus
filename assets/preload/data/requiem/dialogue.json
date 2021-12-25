@@ -1,0 +1,25 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "garstar",
+			"boxState": "normal",
+			"expression": "normal",
+			"text": "Oof..., I', dead.. sorry about that "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garstar",
+			"boxState": "normal",
+			"expression": "normal",
+			"text": "Oh"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garstar",
+			"boxState": "normal",
+			"expression": "normal",
+			"text": "Don't be afraid lil man I am ghost now\\nI can still sing some music with you let's make it over!"
+		}
+	]
+}

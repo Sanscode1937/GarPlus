@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tsau.png">
+	<!-- Created with Adobe Animate version 21.0.2.37893 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="garcello idle dance instance 10000" x="0" y="0" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10001" x="0" y="800" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10002" x="0" y="1600" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10003" x="0" y="2400" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10004" x="0" y="3200" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10005" x="801" y="0" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10006" x="801" y="800" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10007" x="801" y="1600" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10008" x="0" y="0" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10009" x="0" y="0" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10010" x="0" y="0" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10011" x="0" y="0" width="801" height="800"/>
+	<SubTexture name="garcello idle dance instance 10012" x="0" y="0" width="801" height="800"/>
+</TextureAtlas>

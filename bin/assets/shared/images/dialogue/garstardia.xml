@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="garstardia.png">
+	<!-- Created with Adobe Animate version 21.0.2.37893 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gar0000" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="gar0001" x="0" y="800" width="800" height="800"/>
+	<SubTexture name="gar0002" x="800" y="0" width="800" height="800"/>
+	<SubTexture name="gar0003" x="800" y="800" width="800" height="800"/>
+	<SubTexture name="gar static0000" x="800" y="800" width="800" height="800"/>
+</TextureAtlas>

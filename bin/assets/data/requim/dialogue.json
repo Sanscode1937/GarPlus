@@ -1,0 +1,32 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Oof..., I', dead.. sorry about that "
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Oh look at my body, BLUE. Not green             \\nWEIRD"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Don't be afraid lil man I am ghost now\\nand not gonna attack you so let's FUNK!"
+		},
+		{
+			"speed": 0.37,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "???"
+		}
+	]
+}

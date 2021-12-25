@@ -1,0 +1,46 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "What are you doing here little man? \\ndo you want something or what?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bap.."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Sing again?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "baap"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "F..F.Fine I will sing with you."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "If i cough ignore that \\nI'm fine thanks"
+		}
+	]
+}

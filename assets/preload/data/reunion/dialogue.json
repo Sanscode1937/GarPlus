@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "tsau",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Uh oh hello there kid"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "tsau",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What are you doing here? \\nI guess you want to sing right?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Bap Skop"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "tsau",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh really you wanna sing with me?\\n"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "tsau",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Let see what you got kid."
+		}
+	]
+}

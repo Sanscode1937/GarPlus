@@ -1,0 +1,24 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		90,
+		-60
+	],
+	"scale": 1.95,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "gar",
+			"idle_name": "gar static"
+		}
+	],
+	"image": "garstardia"
+}

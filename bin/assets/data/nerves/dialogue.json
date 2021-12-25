@@ -1,0 +1,67 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "beep bop!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "Hhh... hey.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "garcello"
+		},
+		{
+			"expression": "talk",
+			"text": "ski boop?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "That was fun, but my chest is starting to feel funny.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "garcello"
+		},
+		{
+			"expression": "talk",
+			"text": "beep...?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": " I-I'm not giving up just yet though. You've got some tight bars, little man.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "garcello"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bap Skype?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "garcello",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh you want to let me continue?"
+		},
+		{
+			"expression": "excited",
+			"text": "F-fine by me. I'm enjoying this actually.\\nOne more couldn't hurt...\\n...Right?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "garcello"
+		}
+	]
+}

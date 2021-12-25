@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gardialogue.png">
+	<!-- Created with Adobe Animate version 21.0.2.37893 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="garcello0000" x="800" y="4800" width="800" height="800"/>
+	<SubTexture name="garcello0001" x="800" y="5600" width="800" height="800"/>
+	<SubTexture name="garcello0002" x="800" y="6400" width="800" height="800"/>
+	<SubTexture name="garcello0003" x="800" y="7200" width="800" height="800"/>
+	<SubTexture name="garcello0004" x="1600" y="0" width="800" height="800"/>
+	<SubTexture name="garcello0005" x="1600" y="800" width="800" height="800"/>
+	<SubTexture name="garcello0006" x="1600" y="1600" width="800" height="800"/>
+	<SubTexture name="garcello0007" x="1600" y="2400" width="800" height="800"/>
+	<SubTexture name="garcello0008" x="1600" y="2400" width="800" height="800"/>
+	<SubTexture name="garcello0009" x="1600" y="2400" width="800" height="800"/>
+	<SubTexture name="garcello0010" x="1600" y="2400" width="800" height="800"/>
+	<SubTexture name="garcello0011" x="1600" y="2400" width="800" height="800"/>
+	<SubTexture name="garcellodead0000" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="garcellodead0001" x="0" y="800" width="800" height="800"/>
+	<SubTexture name="garcellodead0002" x="0" y="1600" width="800" height="800"/>
+	<SubTexture name="garcellodead0003" x="0" y="2400" width="800" height="800"/>
+	<SubTexture name="garcellodead0004" x="0" y="3200" width="800" height="800"/>
+	<SubTexture name="garcellodead0005" x="0" y="4000" width="800" height="800"/>
+	<SubTexture name="garcellodead0006" x="0" y="4800" width="800" height="800"/>
+	<SubTexture name="garcellodead0007" x="0" y="5600" width="800" height="800"/>
+	<SubTexture name="garcellodead0008" x="0" y="5600" width="800" height="800"/>
+	<SubTexture name="garcellodead0009" x="0" y="5600" width="800" height="800"/>
+	<SubTexture name="garcellodead0010" x="0" y="5600" width="800" height="800"/>
+	<SubTexture name="garcellodead0011" x="0" y="5600" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0000" x="0" y="6400" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0001" x="0" y="7200" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0002" x="800" y="0" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0003" x="800" y="800" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0004" x="800" y="1600" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0005" x="800" y="2400" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0006" x="800" y="3200" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0007" x="800" y="4000" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0008" x="800" y="4000" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0009" x="800" y="4000" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0010" x="800" y="4000" width="800" height="800"/>
+	<SubTexture name="garcelloghosty0011" x="800" y="4000" width="800" height="800"/>
+	<SubTexture name="garcellotired0000" x="800" y="4800" width="800" height="800"/>
+	<SubTexture name="garcellotired0001" x="1600" y="3200" width="800" height="800"/>
+	<SubTexture name="garcellotired0002" x="1600" y="4000" width="800" height="800"/>
+	<SubTexture name="garcellotired0003" x="1600" y="4800" width="800" height="800"/>
+	<SubTexture name="garcellotired0004" x="1600" y="5600" width="800" height="800"/>
+	<SubTexture name="garcellotired0005" x="1600" y="6400" width="800" height="800"/>
+	<SubTexture name="garcellotired0006" x="1600" y="7200" width="800" height="800"/>
+	<SubTexture name="garcellotired0007" x="2400" y="0" width="800" height="800"/>
+	<SubTexture name="garcellotired0008" x="2400" y="800" width="800" height="800"/>
+	<SubTexture name="garcellotired0009" x="2400" y="800" width="800" height="800"/>
+	<SubTexture name="garcellotired0010" x="2400" y="800" width="800" height="800"/>
+	<SubTexture name="garcellotired0011" x="2400" y="800" width="800" height="800"/>
+</TextureAtlas>

@@ -1,0 +1,57 @@
+{
+	"storyName": "TimeSkip AU GARCELLO",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "week1",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"garcellots",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Reunion",
+			"garcelloauhappy",
+			[
+				46,
+				75,
+				113
+			]
+		],
+		[
+			"EASED",
+			"garcelloauhappy",
+			[
+				46,
+				75,
+				113
+			]
+		],
+		[
+			"SWEET TOOTH",
+			"garcelloauhappy",
+			[
+				46,
+				75,
+				113
+			]
+		],
+		[
+			"STAY",
+			"garcelloauhappy",
+			[
+				46,
+				75,
+				113
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "TS!AU"
+}
