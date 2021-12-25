@@ -22,6 +22,7 @@ Sanscode1937 https://www.youtube.com/channel/UCsKB5YMKW2vhpZS31b0kgTA
 -----------------------------
 
 Coding By Sanscode1937
+--------------------------------------------------------
 
 Jaronjackpot additional charter https://www.youtube.com/channel/UCbiTx25o84QdDF3bhr5E6OA
 --------------------------------------------------------
@@ -31,12 +32,6 @@ Chart fix by Sanscode1937
 Songs By atsuover & rageminer & stardust tunes & honkish
 --------------------------------------------------------
 Honkish https://www.youtube.com/channel/UC7QnhHwskvAP1fAdNhFIRDg
---------------------------------------------------------
-
-Atsuover https://www.youtube.com/c/atsuover
---------------------------------------------------------
-
-Rageminer https://www.youtube.com/c/Rageminer
 --------------------------------------------------------
 
 Stardust Tunes https://www.youtube.com/c/StardustTunes
