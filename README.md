@@ -3,35 +3,43 @@ Garcello PLUS reference from Smoke Em Out Struggle PLUS(It's not release now)
 Warning: This is Fanmade work not official
 
 Reference : https://fridaynightfunking.fandom.com/wiki/Garcello
+--------------------------------------------------------
 
 Original by Atsuover & Rageminer
 --------------------------------
 Atsuover https://www.youtube.com/c/atsuover
+--------------------------------------------------------
 
 Rageminer https://www.youtube.com/c/Rageminer
+--------------------------------------------------------
 
 Garcello PLUS by Sanscode1937
 -----------------------------
 
 Sanscode1937 https://www.youtube.com/channel/UCsKB5YMKW2vhpZS31b0kgTA
+--------------------------------------------------------
 
 -----------------------------
 
 Coding By Sanscode1937
 
 Jaronjackpot additional charter https://www.youtube.com/channel/UCbiTx25o84QdDF3bhr5E6OA
+--------------------------------------------------------
 
 Chart fix by Sanscode1937
 
 Songs By atsuover & rageminer & stardust tunes & honkish
 --------------------------------------------------------
 Honkish https://www.youtube.com/channel/UC7QnhHwskvAP1fAdNhFIRDg
+--------------------------------------------------------
 
 Atsuover https://www.youtube.com/c/atsuover
+--------------------------------------------------------
 
 Rageminer https://www.youtube.com/c/Rageminer
+--------------------------------------------------------
 
-https://www.youtube.com/c/StardustTunes
+Stardust Tunes https://www.youtube.com/c/StardustTunes
 --------------------------------------------------------
 
 Garcello fla by Sanscode1937 In the sourcecode
