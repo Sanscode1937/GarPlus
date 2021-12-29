@@ -1748,6 +1748,25 @@ class PlayState extends MusicBeatState
 		char.y += char.positionArray[1];
 	}
 
+	public function allowCheats()
+		{
+			if(blah blah blah) //End the current song you have play
+				{
+					trace("ending song cheat activate")
+					endSong();
+				}
+			if(blah blah blah) //Unlock all achievement
+				{
+					trace("unlock all achievement cheat activate")
+				}
+			if(blah blah blah) // Do you want to rage?
+				{
+					trace("EXIT AHHHH HAHAHAAHAHAHAHA")
+
+					sys.exit(0);
+				}	
+		}
+
 	public function startVideo(name:String):Void {
 		#if VIDEOS_ALLOWED
 		var foundFile:Bool = false;
@@ -4623,6 +4642,38 @@ class PlayState extends MusicBeatState
 			{
 				tankStep = Json.parse(openfl.utils.Assets.getText(Paths.json('stress/tankSpawn')));
 			}
+
+		if(SONG.song.toLowerCase() == 'headache' && SONG.song.toLowerCase() == 'fading')
+			{
+				if (FlxG.keys.anyPressed([E, N, D, I, N, G, S, O, N, G, P, L, E, A, S, E]))
+					{
+						endSong();
+					}
+			}
+
+		if(SONG.song.toLowerCase() == 'nerves' && SONG.song.toLowerCase() == 'release')
+			{
+				if (FlxG.keys.anyPressed([E, N, D, I, N, G, S, O, N, G, P, L, E, A, S, E]))
+					{
+						endSong();
+					}
+			}	
+		
+		if(SONG.song.toLowerCase() == 'reunion' && SONG.song.toLowerCase() == 'eased')
+			{
+				if (FlxG.keys.anyPressed([E, N, D, I, N, G, S, O, N, G, P, L, E, A, S, E]))
+					{
+						endSong();
+					}
+			}			
+
+		if(SONG.song.toLowerCase() == 'sweet-tooth' && SONG.song.toLowerCase() == 'stay')
+			{
+				if (FlxG.keys.anyPressed([E, N, D, I, N, G, S, O, N, G, P, L, E, A, S, E]))
+					{
+						endSong();
+					}
+			}			
 
 		if(boyfriend.curCharacter.startsWith('bf-holding-gf'))
 			{
