@@ -1,4 +1,4 @@
-package;
+package; // FlxG.camera.shake(0.1, 50);
 
 #if desktop
 import Discord.DiscordClient;
@@ -120,6 +120,12 @@ class PlayState extends MusicBeatState
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
 
+	public static var p1CamFollowNoteMovementX:Int = 0;
+	public static var p1CamFollowNoteMovementY:Int = 0;
+	
+	public static var p2CamFollowNoteMovementX:Int = 0;
+	public static var p2CamFollowNoteMovementY:Int = 0;
+
 	public var vocals:FlxSound;
 
 	public var dad:Character;
@@ -170,6 +176,8 @@ class PlayState extends MusicBeatState
 
 	var botplaySine:Float = 0;
 	var botplayTxt:FlxText;
+
+	var colorscreen:Bool = false;
 
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;
@@ -281,6 +289,13 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+
+		p1CamFollowNoteMovementX = 0;
+		p1CamFollowNoteMovementY = 0;
+
+		p2CamFollowNoteMovementX = 0;
+		p2CamFollowNoteMovementY = 0;
+
 		#if MODS_ALLOWED
 		Paths.destroyLoadedImages();
 		#end
@@ -1748,24 +1763,24 @@ class PlayState extends MusicBeatState
 		char.y += char.positionArray[1];
 	}
 
-	public function allowCheats()
-		{
-			if(blah blah blah) //End the current song you have play
-				{
-					trace("ending song cheat activate")
-					endSong();
-				}
-			if(blah blah blah) //Unlock all achievement
-				{
-					trace("unlock all achievement cheat activate")
-				}
-			if(blah blah blah) // Do you want to rage?
-				{
-					trace("EXIT AHHHH HAHAHAAHAHAHAHA")
+	// public function allowCheats()
+	// 	{
+	// 		if(blah blah blah) //End the current song you have play
+	// 			{
+	// 				trace("ending song cheat activate")
+	// 				endSong();
+	// 			}
+	// 		if(blah blah blah) //Unlock all achievement
+	// 			{
+	// 				trace("unlock all achievement cheat activate")
+	// 			}
+	// 		if(blah blah blah) // Do you want to rage?
+	// 			{
+	// 				trace("EXIT AHHHH HAHAHAAHAHAHAHA")
 
-					sys.exit(0);
-				}	
-		}
+	// 				sys.exit(0);
+	// 			}	
+	// 	}
 
 	public function startVideo(name:String):Void {
 		#if VIDEOS_ALLOWED
@@ -3047,18 +3062,26 @@ class PlayState extends MusicBeatState
 						{
 							case 0:
 								animToPlay = 'singLEFT';
+								p2CamFollowNoteMovementX = 15;
+								p2CamFollowNoteMovementY = 0;
 								
 								
 							case 1:
 								animToPlay = 'singDOWN';
+								p2CamFollowNoteMovementX = 15;
+								p2CamFollowNoteMovementY = 0;
 								
 								
 							case 2:
 								animToPlay = 'singUP';
+								p2CamFollowNoteMovementX = 15;
+								p2CamFollowNoteMovementY = 0;
 								
 								
 							case 3:
 								animToPlay = 'singRIGHT';
+								p2CamFollowNoteMovementX = 15;
+								p2CamFollowNoteMovementY = 0;
 								
 								
 						}
@@ -3132,7 +3155,6 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		#if debug
 		if(!endingSong && !startingSong) {
 			if (FlxG.keys.justPressed.ONE) {
 				KillNotes();
@@ -3179,7 +3201,6 @@ class PlayState extends MusicBeatState
 		setOnLuas('cameraY', camFollowPos.y);
 		setOnLuas('botPlay', PlayState.cpuControlled);
 		callOnLuas('onUpdatePost', [elapsed]);
-		#end
 	}
 
 	var isDead:Bool = false;
@@ -4353,18 +4374,26 @@ class PlayState extends MusicBeatState
 					case 0:
 						animToPlay = 'singLEFT';
 						movecamstrum(0, true);
+						p1CamFollowNoteMovementX = 15;
+						p1CamFollowNoteMovementY = 0;
 						
 					case 1:
 						animToPlay = 'singDOWN';
 						movecamstrum(1, true);
+						p1CamFollowNoteMovementX = 15;
+						p1CamFollowNoteMovementY = 0;
 						
 					case 2:
 						animToPlay = 'singUP';
 						movecamstrum(2, true);
+						p1CamFollowNoteMovementX = 15;
+						p1CamFollowNoteMovementY = 0;
 						
 					case 3:
 						animToPlay = 'singRIGHT';
 						movecamstrum(3, true);
+						p1CamFollowNoteMovementX = 15;
+						p1CamFollowNoteMovementY = 0;
 						
 				}
 

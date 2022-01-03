@@ -64,6 +64,8 @@ class Note extends FlxSprite
 
 	public var texture(default, set):String = null;
 
+	var colorscreen:Bool = false;
+
 	public var noAnimation:Bool = false;
 	public var hitCausesMiss:Bool = false;
 
@@ -96,6 +98,31 @@ class Note extends FlxSprite
 						missHealth = 0.3;
 					}
 					hitCausesMiss = true;
+				// case 'Smoke Note':
+				// 	reloadNote('HURT');
+				// 	var color:FlxSprite = new FlxSprite(FlxG.random.float(100,600),FlxG.random.float(100,600));
+				// 	color.frames = Paths.getSparrowAtlas('DyingImage');
+				// 	color.animation.addByPrefix('smoke', 'Smoke', 24, false); // Some smoke animation if you press i will annoying ur screen idk LMAO
+				// 	color.updateHitbox();
+				// 	color.alpha = 0;
+				// 	color.antialiasing = true;
+				// 	add(color);
+				// 	color.cameras = [camHUD];
+				// 	colorscreen = false;
+				// 	FlxTween.tween(color, {width: 1, alpha: 0.8}, 0.2, {ease: FlxEase.sineOut});
+				// 	new FlxTimer().start(1.5 , function(tmr:FlxTimer)
+				// 	{
+				// 		colorscreen = true;
+				// 	});
+				// 	new FlxTimer().start(timing , function(tmr:FlxTimer)
+				// 	{
+				// 		FlxTween.tween(color, {alpha: 0}, 0.2, {ease: FlxEase.sineOut});
+				// 	});
+				// 	new FlxTimer().start(11 , function(tmr:FlxTimer)
+				// 	{
+				// 		remove(color);
+				// 	}); 
+						
 				case 'Dodge Note':		
 					reloadNote('HURT');			
 					mustPress;

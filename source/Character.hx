@@ -52,6 +52,7 @@ class Character extends FlxSprite
 	public var colorTween:FlxTween;
 	public var holdTimer:Float = 0;
 	public var heyTimer:Float = 0;
+	public var alreadyLoaded:Bool = false;
 	public var specialAnim:Bool = false;
 	public var animationNotes:Array<Dynamic> = [];
 	public var stunned:Bool = false;
@@ -71,7 +72,6 @@ class Character extends FlxSprite
 	public var noAntialiasing:Bool = false;
 	public var originalFlipX:Bool = false;
 	public var healthColorArray:Array<Int> = [255, 0, 0];
-	public var alreadyLoaded:Bool = true; //Used by "Change Character" event
 
 	public static var DEFAULT_CHARACTER:String = 'bf'; //In case a character is missing, it will use BF on its place
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false)
@@ -90,12 +90,26 @@ class Character extends FlxSprite
 		var library:String = null;
 		switch (curCharacter)
 		{
-			//case 'your character name in case you want to hardcode him instead':
+			case 'garded':
+			frames = AtlasFrameMaker.construct('assets/images/garcellodead_assets');
+			animation.addByPrefix('idle', 'idle', 24);
+			animation.addByPrefix('singUP', 'singUP', 24);
+			animation.addByPrefix('singUP-alt', 'altUPTBLM', 15);
+			animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
+			animation.addByPrefix('singDOWN', 'singDOWN', 24);
+			animation.addByPrefix('singLEFT', 'singLEFT', 24);
+
+			healthIcon = "garcellodead";
+			cameraPosition = [-100, 100];
+
+			healthColorArray = [135, 255, 155];
+
+			animation.play("idle");
 
 			default:
 				var characterPath:String = 'characters/' + curCharacter + '.json';
 				#if MODS_ALLOWED
-				var path:String = Paths.modFolders(characterPath);
+				var path:String = Paths.mods(characterPath);
 				if (!FileSystem.exists(path)) {
 					path = Paths.getPreloadPath(characterPath);
 				}
@@ -200,6 +214,19 @@ class Character extends FlxSprite
 		}
 	}
 
+	function numArr(min,max):Array<Int>{
+		var a = [];
+		var l = max - min;
+		var p = min;
+		for (i in 0...l){
+			a.push(p);
+			p++;
+		}
+		trace(a);
+		return a;
+	}
+	
+	
 	override function update(elapsed:Float)
 	{
 		if(!debugMode && animation.curAnim != null)
@@ -263,7 +290,7 @@ class Character extends FlxSprite
 					playAnim('danceLeft' + idleSuffix);
 			}
 			else if(animation.getByName('idle' + idleSuffix) != null) {
-					playAnim('idle' + idleSuffix);
+					playAnim('idle' + idleSuffix,true);
 			}
 		}
 	}
