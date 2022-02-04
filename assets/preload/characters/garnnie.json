@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "garcello idle dance"
+		},
+		{
+			"offsets": [
+				-3,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "garcello Sing Note UP"
+		},
+		{
+			"offsets": [
+				11,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "garcello Sing Note RIGHT"
+		},
+		{
+			"offsets": [
+				8,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "garcello Sing Note LEFT"
+		},
+		{
+			"offsets": [
+				8,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "garcello Sing Note DOWN"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				5,
+				-12
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "garcello cough",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				31,
+				11
+			],
+			"anim": "singUP-alt",
+			"fps": 15,
+			"name": "garcello coolguy",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/garnie_assets",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "garnnie",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		253,
+		169
+	],
+	"camera_position": [
+		-100,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

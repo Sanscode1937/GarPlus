@@ -1,59 +1,70 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "garcello idle dance",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "garcello idle dance"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-3,
 				-1
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "garcello Sing Note UP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "garcello Sing Note UP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				0
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "garcello Sing Note RIGHT",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "garcello Sing Note RIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				8,
 				0
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "garcello Sing Note LEFT",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "garcello Sing Note LEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-6,
 				-1
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "garcello Sing Note DOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "garcello Sing Note DOWN"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 16,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "garcello coolguy"
 		}
 	],
 	"no_antialiasing": false,

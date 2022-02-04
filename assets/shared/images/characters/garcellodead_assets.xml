@@ -59,10 +59,10 @@
 	<SubTexture name="garcello coolguy0010" x="0" y="6400" width="800" height="800"/>
 	<SubTexture name="garcello coolguy0011" x="0" y="5600" width="800" height="800"/>
 	<SubTexture name="garcello coolguy0012" x="0" y="6400" width="800" height="800"/>
-	<SubTexture name="garcello coolguy0013" x="0" y="6400" width="800" height="800"/>
+	<SubTexture name="garcello coolguy0013" x="0" y="5600" width="800" height="800"/>
 	<SubTexture name="garcello coolguy0014" x="0" y="6400" width="800" height="800"/>
-	<SubTexture name="garcello coolguy0015" x="0" y="6400" width="800" height="800"/>
-	<SubTexture name="garcello coolguy0016" x="0" y="6400" width="800" height="800"/>
+	<SubTexture name="garcello coolguy0015" x="0" y="5600" width="800" height="800"/>
+	<SubTexture name="garcello coolguy0016" x="0" y="5600" width="800" height="800"/>
 	<SubTexture name="garcello coolguy0018" x="0" y="6400" width="800" height="800"/>
 	<SubTexture name="garcello coolguy0019" x="0" y="6400" width="800" height="800"/>
 	<SubTexture name="garcello coolguy0020" x="0" y="6400" width="800" height="800"/>

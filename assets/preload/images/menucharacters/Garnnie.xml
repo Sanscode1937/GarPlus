@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Garnnie.png">
+	<!-- Created with Adobe Animate version 21.0.2.37893 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Garnnie0000" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0001" x="0" y="800" width="800" height="800"/>
+	<SubTexture name="Garnnie0002" x="0" y="1600" width="800" height="800"/>
+	<SubTexture name="Garnnie0003" x="0" y="2400" width="800" height="800"/>
+	<SubTexture name="Garnnie0004" x="0" y="3200" width="800" height="800"/>
+	<SubTexture name="Garnnie0005" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0006" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0007" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0008" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0009" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0010" x="0" y="0" width="800" height="800"/>
+	<SubTexture name="Garnnie0011" x="0" y="0" width="800" height="800"/>
+</TextureAtlas>

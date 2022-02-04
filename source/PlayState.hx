@@ -116,6 +116,7 @@ class PlayState extends MusicBeatState
 	public static var isPixelStage:Bool = false;
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
+	public var followChars:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
@@ -192,6 +193,7 @@ class PlayState extends MusicBeatState
 
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
+	var requiemFlash:BGSprite;
 
 	//GARCELLO STUFF
 	var  bluesmokerrequiem:FlxSprite;
@@ -871,7 +873,15 @@ class PlayState extends MusicBeatState
 							corpse.scrollFactor.set(0.9, 0.9);
 							corpse.active = false;
 							add(corpse);
-						}				
+						}	
+						if (SONG.song.toLowerCase() == 'realrelease')
+							{
+								var corpse:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
+								corpse.antialiasing = true;
+								corpse.scrollFactor.set(0.9, 0.9);
+								corpse.active = false;
+								add(corpse);
+							}												
 					if (SONG.song.toLowerCase() == 'requiem')
 						{
 							var corpsee:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
@@ -3048,7 +3058,7 @@ class PlayState extends MusicBeatState
 						dad.heyTimer = 0.6;
 					} else if(!daNote.noAnimation) {
 						var altAnim:String = "";
-
+						
 						if (SONG.notes[Math.floor(curStep / 16)] != null)
 						{
 							if (SONG.notes[Math.floor(curStep / 16)].altAnim || daNote.noteType == 'Alt Animation') {
@@ -3057,32 +3067,65 @@ class PlayState extends MusicBeatState
 						}
 
 						var animToPlay:String = '';
+						var xx:Int = 0;
+						var yy:Int = 0;
+						var ofs:Int = 0;
 
 						switch (Math.abs(daNote.noteData))
 						{
 							case 0:
-								animToPlay = 'singLEFT';
-								p2CamFollowNoteMovementX = 15;
-								p2CamFollowNoteMovementY = 0;
-								
-								
+								animToPlay = 'singLEFT';				
+		
+										var purple = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/LEFT LIGHT'));
+										purple.screenCenter();
+										purple.cameras = [camcolor];
+										purple.scale.set(0.81,0.81);
+										purple.antialiasing = true;
+										purple.blend = BlendMode.OVERLAY;
+										add(purple);
+						
+										purple.alpha = 0.2;
+										FlxTween.tween(purple, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});						
+															
+																
 							case 1:
-								animToPlay = 'singDOWN';
-								p2CamFollowNoteMovementX = 15;
-								p2CamFollowNoteMovementY = 0;
-								
-								
+								animToPlay = 'singDOWN';		
+										var	blue = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/DOWN LIGHT', 'shared'));
+										blue.screenCenter();
+										blue.cameras = [camcolor];
+										blue.scale.set(0.81,0.81);
+										blue.antialiasing = true;
+										blue.alpha = 0.2;
+										blue.blend = BlendMode.OVERLAY;
+										add(blue);
+										FlxTween.tween(blue, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});						
+										
+
 							case 2:
 								animToPlay = 'singUP';
-								p2CamFollowNoteMovementX = 15;
-								p2CamFollowNoteMovementY = 0;
+									var green = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/UP LIGHT', 'shared'));
+									green.screenCenter();
+									green.cameras = [camcolor];
+									green.scale.set(0.81,0.81);
+									green.antialiasing = true;
+									green.blend = BlendMode.OVERLAY;
+									green.alpha = 0.2;
+									add(green);
+									FlxTween.tween(green, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});									
 								
 								
 							case 3:
-								animToPlay = 'singRIGHT';
-								p2CamFollowNoteMovementX = 15;
-								p2CamFollowNoteMovementY = 0;
-								
+								animToPlay = 'singRIGHT';			
+									var red = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/RIGHT LIGHT', 'shared'));
+									red.screenCenter();
+									red.cameras = [camcolor];
+									red.scale.set(0.81,0.81);
+									red.antialiasing = true;
+									red.blend = BlendMode.OVERLAY;
+									red.alpha = 0.2;
+									add(red);
+									
+									FlxTween.tween(red, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});					
 								
 						}
 						if(daNote.noteType == 'GF Sing') {
@@ -4372,28 +4415,70 @@ class PlayState extends MusicBeatState
 				switch (Std.int(Math.abs(note.noteData)))
 				{
 					case 0:
-						animToPlay = 'singLEFT';
-						movecamstrum(0, true);
-						p1CamFollowNoteMovementX = 15;
-						p1CamFollowNoteMovementY = 0;
+						animToPlay = 'singLEFT';				
+
+								var purple = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/LEFT LIGHT'));
+								purple.screenCenter();
+								purple.cameras = [camcolor];
+								purple.scale.set(0.81,0.81);
+								purple.antialiasing = true;
+								purple.blend = BlendMode.OVERLAY;
+								add(purple);
+				
+								purple.alpha = 0.2;
+								FlxTween.tween(purple, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+							
+
+						
+						
 						
 					case 1:
 						animToPlay = 'singDOWN';
-						movecamstrum(1, true);
-						p1CamFollowNoteMovementX = 15;
-						p1CamFollowNoteMovementY = 0;
-						
+
+								var	blue = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/DOWN LIGHT', 'shared'));
+								blue.screenCenter();
+								blue.cameras = [camcolor];
+								blue.scale.set(0.81,0.81);
+								blue.antialiasing = true;
+								blue.alpha = 0.2;
+								blue.blend = BlendMode.OVERLAY;
+								add(blue);
+								FlxTween.tween(blue, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+							
+
+								
+
 					case 2:
 						animToPlay = 'singUP';
-						movecamstrum(2, true);
-						p1CamFollowNoteMovementX = 15;
-						p1CamFollowNoteMovementY = 0;
+
+								var green = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/UP LIGHT', 'shared'));
+								green.screenCenter();
+								green.cameras = [camcolor];
+								green.scale.set(0.81,0.81);
+								green.antialiasing = true;
+								green.blend = BlendMode.OVERLAY;
+								green.alpha = 0.2;
+								add(green);
+								FlxTween.tween(green, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+							
+
+						
 						
 					case 3:
 						animToPlay = 'singRIGHT';
-						movecamstrum(3, true);
-						p1CamFollowNoteMovementX = 15;
-						p1CamFollowNoteMovementY = 0;
+								var red = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/RIGHT LIGHT', 'shared'));
+								red.screenCenter();
+								red.cameras = [camcolor];
+								red.scale.set(0.81,0.81);
+								red.antialiasing = true;
+								red.blend = BlendMode.OVERLAY;
+								red.alpha = 0.2;
+								add(red);
+								
+								FlxTween.tween(red, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+							
+
+
 						
 				}
 
@@ -4679,6 +4764,18 @@ class PlayState extends MusicBeatState
 						endSong();
 					}
 			}
+
+		if (dad.curCharacter == 'garcellodeadsd' && SONG.song.toLowerCase() == 'requiem')
+		{
+			if (curStep == 832)
+			{
+				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom = 1.4}, 3, { type: FlxTween.ONESHOT, ease: FlxEase.quadInOut});
+			}
+			if (curStep == 848)
+			{
+				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom = 0.9}, 3, { type: FlxTween.ONESHOT, ease: FlxEase.quadInOut});
+			}				
+		}			
 
 		if(SONG.song.toLowerCase() == 'nerves' && SONG.song.toLowerCase() == 'release')
 			{

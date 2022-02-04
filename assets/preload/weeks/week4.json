@@ -1,0 +1,30 @@
+{
+	"storyName": "unleashed by atsuover!",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"garnnie",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"unleashed",
+			"garnnie",
+			[
+				86,
+				233,
+				153
+			]
+		]
+	],
+	"weekName": "unleashed!!!"
+}

@@ -2,21 +2,26 @@
 	"storyName": "Stardust Garcello Songs by Stardust Tunes",
 	"hideFreeplay": false,
 	"weekBackground": "",
+	"weekBefore": "week2",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"weekBefore": "week2",
 	"startUnlocked": true,
+	"weekCharacters": [
+		"garcello",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"Addicted",
-			"garcellotired",
+			"garcellotiredstar",
 			[
 				46,
-				235,
-				113
+				135,
+				253
 			]
 		],
 		[
@@ -30,10 +35,5 @@
 		]
 	],
 	"hideStoryMode": false,
-	"weekCharacters": [
-		"garcello",
-		"bf",
-		"gf"
-	],
 	"weekName": "Stardust Garcello"
 }
