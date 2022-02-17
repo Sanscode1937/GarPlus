@@ -1,39 +1,59 @@
 {
-	"songs": [
-		[
-			"burnout",
-			"dad",
-			[
-				146,
-				113,
-				253
-			]
-		],
-		[
-			"realrelease",
-			"dad",
-			[
-				146,
-				113,
-				253
-			]
-		]
-	],
+	"storyName": "Garcello feat. HighPoweredKeyz, Shockwave Music",
 	"hideFreeplay": false,
 	"weekBackground": "",
-	"weekCharacters": [
-		"",
-		"garcello",
-		""
-	],
-	"storyName": "Garcello feat. HighPoweredKeyz, Shockwave Music",
-	"weekName": "Garcello feat. HighPoweredKeyz, Shockwave Music",
+	"weekBefore": "week4",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"garcello",
+		""
+	],
+	"songs": [
+		[
+			"burnout",
+			"garcello",
+			[
+				86,
+				253,
+				113
+			]
+		],
+		[
+
+			"mediocre",
+			"garcellotired",
+			[
+				86,
+				253,
+				113
+			]
+		],
+		[
+
+			"realrelease",
+			"garcellodead",
+			[
+				66,
+				73,
+				235
+			]
+		],
+		[
+			"nearer my god to thee",
+			"garcelloghosty",
+			[
+				66,
+				255,
+				135
+			]
+		]
+	],
 	"hideStoryMode": false,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"weekName": "Garcello feat. HighPoweredKeyz, Shockwave Music"
 }

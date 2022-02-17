@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MenuCharacter.png">
+	<!-- Created with Adobe Animate version 21.0.2.37893 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Garnnie0000" x="75" y="925" width="800" height="800"/>
+	<SubTexture name="garcello idle0000" x="925" y="75" width="335" height="638"/>
+	<SubTexture name="garcellotimeskip idle0000" x="75" y="75" width="800" height="800"/>
+</TextureAtlas>

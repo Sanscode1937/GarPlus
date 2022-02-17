@@ -1,6 +1,6 @@
 {
-	"idle_anim": "garcello idle",
-	"image": "GarcelloTS",
+	"idle_anim": "garcellotimeskip idle",
+	"image": "MenuCharacter",
 	"position": [
 		263,
 		245

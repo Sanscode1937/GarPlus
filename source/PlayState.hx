@@ -881,7 +881,15 @@ class PlayState extends MusicBeatState
 								corpse.scrollFactor.set(0.9, 0.9);
 								corpse.active = false;
 								add(corpse);
-							}												
+							}		
+					if (SONG.song.toLowerCase() == 'nearer-my-god-to-thee')
+						{
+							var corpsee:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
+							corpsee.antialiasing = true;
+							corpsee.scrollFactor.set(0.9, 0.9);
+							corpsee.active = false;
+							add(corpsee);
+						}																	
 					if (SONG.song.toLowerCase() == 'requiem')
 						{
 							var corpsee:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
@@ -934,6 +942,24 @@ class PlayState extends MusicBeatState
 					bgAlley.scrollFactor.set(0.9, 0.9);
 					bgAlley.active = false;
 					add(bgAlley);
+
+					if (SONG.song.toLowerCase() == 'realrelease')
+						{
+							var corpsee:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
+							corpsee.antialiasing = true;
+							corpsee.scrollFactor.set(0.9, 0.9);
+							corpsee.active = false;
+							add(corpsee);
+						}
+
+					if (SONG.song.toLowerCase() == 'nearer-my-god-to-thee')
+						{
+							var corpsee:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
+							corpsee.antialiasing = true;
+							corpsee.scrollFactor.set(0.9, 0.9);
+							corpsee.active = false;
+							add(corpsee);
+						}
 
 					if(SONG.song.toLowerCase() == 'fading')
 						{
@@ -4763,19 +4789,7 @@ class PlayState extends MusicBeatState
 					{
 						endSong();
 					}
-			}
-
-		if (dad.curCharacter == 'garcellodeadsd' && SONG.song.toLowerCase() == 'requiem')
-		{
-			if (curStep == 832)
-			{
-				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom = 1.4}, 3, { type: FlxTween.ONESHOT, ease: FlxEase.quadInOut});
-			}
-			if (curStep == 848)
-			{
-				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom = 0.9}, 3, { type: FlxTween.ONESHOT, ease: FlxEase.quadInOut});
-			}				
-		}			
+			}		
 
 		if(SONG.song.toLowerCase() == 'nerves' && SONG.song.toLowerCase() == 'release')
 			{
