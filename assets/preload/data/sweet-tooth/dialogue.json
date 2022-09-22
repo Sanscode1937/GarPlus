@@ -5,42 +5,21 @@
 			"portrait": "tsau",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "..."
+			"text": "Damn you sing the song so violent\\nI didnt even breathe"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "* Im about to end this mfs whole carrer * Beep bop skoul kabop"
 		},
 		{
 			"speed": 0.05,
 			"portrait": "tsau",
-			"boxState": "normal",
+			"boxState": "angry",
 			"expression": "talk",
-			"text": "Duhh"
-		},
-		{
-			"speed": 0.05,
-			"portrait": "tsau",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "You sing like CRAZY!"
-		},
-		{
-			"speed": 0.05,
-			"portrait": "tsau",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "I'm not give up now."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "tsau",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "But now you cannot beat me for real this time"
-		},
-		{
-			"speed": 0.05,
-			"portrait": "tsau",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "LMFAO"
+			"text": "Kid I know what chu sayin to me "
 		}
 	]
 }

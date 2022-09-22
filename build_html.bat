@@ -1,6 +1,6 @@
 @echo off
 color 0a
-cd ..
+cd 
 @echo on
 echo BUILDING GAME
 lime test html5 -release

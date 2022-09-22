@@ -3,9 +3,15 @@ package; // FlxG.camera.shake(0.1, 50);
 #if desktop
 import Discord.DiscordClient;
 #end
+import Achievements;
+import DialogueBoxPsych;
+import FunkinLua;
 import Section.SwagSection;
 import Song.SwagSong;
+import StageData;
 import WiggleEffect.WiggleEffectType;
+import editors.CharacterEditorState;
+import editors.ChartingState;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -20,12 +26,15 @@ import flixel.addons.effects.FlxTrailArea;
 import flixel.addons.effects.chainable.FlxEffectSprite;
 import flixel.addons.effects.chainable.FlxWaveEffect;
 import flixel.addons.transition.FlxTransitionableState;
+import flixel.animation.FlxAnimationController;
 import flixel.graphics.atlas.FlxAtlas;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.group.FlxSpriteGroup;
+import flixel.input.keyboard.FlxKey;
+import flixel.math.FlxAngle;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
-import flixel.animation.FlxAnimationController;
 import flixel.math.FlxRect;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
@@ -43,21 +52,12 @@ import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import openfl.utils.Assets as OpenFlAssets;
-import editors.ChartingState;
-import editors.CharacterEditorState;
-import flixel.group.FlxSpriteGroup;
-import flixel.input.keyboard.FlxKey;
-import Achievements;
-import StageData;
-import FunkinLua;
-import DialogueBoxPsych;
-import flixel.math.FlxAngle;
 
+using StringTools;
 #if sys
 import sys.FileSystem;
 #end
 
-using StringTools;
 
 class PlayState extends MusicBeatState
 {
@@ -874,7 +874,7 @@ class PlayState extends MusicBeatState
 							corpse.active = false;
 							add(corpse);
 						}	
-						if (SONG.song.toLowerCase() == 'realrelease')
+						if (SONG.song.toLowerCase() == 'prelrelease')
 							{
 								var corpse:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
 								corpse.antialiasing = true;
@@ -943,7 +943,7 @@ class PlayState extends MusicBeatState
 					bgAlley.active = false;
 					add(bgAlley);
 
-					if (SONG.song.toLowerCase() == 'realrelease')
+					if (SONG.song.toLowerCase() == 'prerelease')
 						{
 							var corpsee:FlxSprite = new FlxSprite(-230, 540).loadGraphic(Paths.image('gardead'));
 							corpsee.antialiasing = true;
@@ -3101,58 +3101,62 @@ class PlayState extends MusicBeatState
 						{
 							case 0:
 								animToPlay = 'singLEFT';				
-		
-										var purple = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/LEFT LIGHT'));
-										purple.screenCenter();
-										purple.cameras = [camcolor];
-										purple.scale.set(0.81,0.81);
-										purple.antialiasing = true;
-										purple.blend = BlendMode.OVERLAY;
-										add(purple);
+										#if !perfonmance
+										// var purple = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/LEFT LIGHT'));
+										// purple.screenCenter();
+										// purple.cameras = [camcolor];
+										// purple.scale.set(0.81,0.81);
+										// purple.antialiasing = true;
+										// purple.blend = BlendMode.OVERLAY;
+										// add(purple);
 						
-										purple.alpha = 0.2;
-										FlxTween.tween(purple, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});						
+										// purple.alpha = 0.2;
+										// FlxTween.tween(purple, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});					
+										#end	
 															
 																
 							case 1:
 								animToPlay = 'singDOWN';		
-										var	blue = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/DOWN LIGHT', 'shared'));
-										blue.screenCenter();
-										blue.cameras = [camcolor];
-										blue.scale.set(0.81,0.81);
-										blue.antialiasing = true;
-										blue.alpha = 0.2;
-										blue.blend = BlendMode.OVERLAY;
-										add(blue);
-										FlxTween.tween(blue, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});						
-										
+								#if !perfonmance
+										// var	blue = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/DOWN LIGHT', 'shared'));
+										// blue.screenCenter();
+										// blue.cameras = [camcolor];
+										// blue.scale.set(0.81,0.81);
+										// blue.antialiasing = true;
+										// blue.alpha = 0.2;
+										// blue.blend = BlendMode.OVERLAY;
+										// add(blue);
+										// FlxTween.tween(blue, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});						
+										#end
 
 							case 2:
 								animToPlay = 'singUP';
-									var green = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/UP LIGHT', 'shared'));
-									green.screenCenter();
-									green.cameras = [camcolor];
-									green.scale.set(0.81,0.81);
-									green.antialiasing = true;
-									green.blend = BlendMode.OVERLAY;
-									green.alpha = 0.2;
-									add(green);
-									FlxTween.tween(green, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});									
-								
+								#if !perfonmance
+									// var green = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/UP LIGHT', 'shared'));
+									// green.screenCenter();
+									// green.cameras = [camcolor];
+									// green.scale.set(0.81,0.81);
+									// green.antialiasing = true;
+									// green.blend = BlendMode.OVERLAY;
+									// green.alpha = 0.2;
+									// add(green);
+									// FlxTween.tween(green, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});									
+								#end
 								
 							case 3:
-								animToPlay = 'singRIGHT';			
-									var red = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/RIGHT LIGHT', 'shared'));
-									red.screenCenter();
-									red.cameras = [camcolor];
-									red.scale.set(0.81,0.81);
-									red.antialiasing = true;
-									red.blend = BlendMode.OVERLAY;
-									red.alpha = 0.2;
-									add(red);
+								animToPlay = 'singRIGHT';		
+								#if !perfonmance
+									// var red = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/RIGHT LIGHT', 'shared'));
+									// red.screenCenter();
+									// red.cameras = [camcolor];
+									// red.scale.set(0.81,0.81);
+									// red.antialiasing = true;
+									// red.blend = BlendMode.OVERLAY;
+									// red.alpha = 0.2;
+									// add(red);
 									
-									FlxTween.tween(red, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});					
-								
+									// FlxTween.tween(red, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});					
+									#end
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
@@ -3224,47 +3228,47 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		if(!endingSong && !startingSong) {
-			if (FlxG.keys.justPressed.ONE) {
-				KillNotes();
-				FlxG.sound.music.onComplete();
-			}
-			if(FlxG.keys.justPressed.TWO) { //Go 10 seconds into the future :O
-				FlxG.sound.music.pause();
-				vocals.pause();
-				Conductor.songPosition += 10000;
-				notes.forEachAlive(function(daNote:Note)
-				{
-					if(daNote.strumTime + 800 < Conductor.songPosition) {
-						daNote.active = false;
-						daNote.visible = false;
+		// if(!endingSong && !startingSong) {
+		// 	if (FlxG.keys.justPressed.ONE) {
+		// 		KillNotes();
+		// 		FlxG.sound.music.onComplete();
+		// 	}
+		// 	if(FlxG.keys.justPressed.TWO) { //Go 10 seconds into the future :O
+		// 		FlxG.sound.music.pause();
+		// 		vocals.pause();
+		// 		Conductor.songPosition += 10000;
+		// 		notes.forEachAlive(function(daNote:Note)
+		// 		{
+		// 			if(daNote.strumTime + 800 < Conductor.songPosition) {
+		// 				daNote.active = false;
+		// 				daNote.visible = false;
 
-						daNote.kill();
-						notes.remove(daNote, true);
-						daNote.destroy();
-					}
-				});
-				for (i in 0...unspawnNotes.length) {
-					var daNote:Note = unspawnNotes[0];
-					if(daNote.strumTime + 800 >= Conductor.songPosition) {
-						break;
-					}
+		// 				daNote.kill();
+		// 				notes.remove(daNote, true);
+		// 				daNote.destroy();
+		// 			}
+		// 		});
+		// 		for (i in 0...unspawnNotes.length) {
+		// 			var daNote:Note = unspawnNotes[0];
+		// 			if(daNote.strumTime + 800 >= Conductor.songPosition) {
+		// 				break;
+		// 			}
 
-					daNote.active = false;
-					daNote.visible = false;
+		// 			daNote.active = false;
+		// 			daNote.visible = false;
 
-					daNote.kill();
-					unspawnNotes.splice(unspawnNotes.indexOf(daNote), 1);
-					daNote.destroy();
-				}
+		// 			daNote.kill();
+		// 			unspawnNotes.splice(unspawnNotes.indexOf(daNote), 1);
+		// 			daNote.destroy();
+		// 		}
 
-				FlxG.sound.music.time = Conductor.songPosition;
-				FlxG.sound.music.play();
+		// 		FlxG.sound.music.time = Conductor.songPosition;
+		// 		FlxG.sound.music.play();
 
-				vocals.time = Conductor.songPosition;
-				vocals.play();
-			}
-		}
+		// 		vocals.time = Conductor.songPosition;
+		// 		vocals.play();
+		// 	}
+		// }
 
 		setOnLuas('cameraX', camFollowPos.x);
 		setOnLuas('cameraY', camFollowPos.y);
@@ -4442,68 +4446,69 @@ class PlayState extends MusicBeatState
 				{
 					case 0:
 						animToPlay = 'singLEFT';				
-
-								var purple = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/LEFT LIGHT'));
-								purple.screenCenter();
-								purple.cameras = [camcolor];
-								purple.scale.set(0.81,0.81);
-								purple.antialiasing = true;
-								purple.blend = BlendMode.OVERLAY;
-								add(purple);
+						#if !perfonmance
+								// var purple = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/LEFT LIGHT'));
+								// purple.screenCenter();
+								// purple.cameras = [camcolor];
+								// purple.scale.set(0.81,0.81);
+								// purple.antialiasing = true;
+								// purple.blend = BlendMode.OVERLAY;
+								// add(purple);
 				
-								purple.alpha = 0.2;
-								FlxTween.tween(purple, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
-							
+								// purple.alpha = 0.2;
+								// FlxTween.tween(purple, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+							#end
 
 						
 						
 						
 					case 1:
 						animToPlay = 'singDOWN';
-
-								var	blue = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/DOWN LIGHT', 'shared'));
-								blue.screenCenter();
-								blue.cameras = [camcolor];
-								blue.scale.set(0.81,0.81);
-								blue.antialiasing = true;
-								blue.alpha = 0.2;
-								blue.blend = BlendMode.OVERLAY;
-								add(blue);
-								FlxTween.tween(blue, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
-							
+						#if !perfonmance
+								// var	blue = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/DOWN LIGHT', 'shared'));
+								// blue.screenCenter();
+								// blue.cameras = [camcolor];
+								// blue.scale.set(0.81,0.81);
+								// blue.antialiasing = true;
+								// blue.alpha = 0.2;
+								// blue.blend = BlendMode.OVERLAY;
+								// add(blue);
+								// FlxTween.tween(blue, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+							#end
 
 								
 
 					case 2:
 						animToPlay = 'singUP';
-
-								var green = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/UP LIGHT', 'shared'));
-								green.screenCenter();
-								green.cameras = [camcolor];
-								green.scale.set(0.81,0.81);
-								green.antialiasing = true;
-								green.blend = BlendMode.OVERLAY;
-								green.alpha = 0.2;
-								add(green);
-								FlxTween.tween(green, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+						#if !perfonmance
+								// var green = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/UP LIGHT', 'shared'));
+								// green.screenCenter();
+								// green.cameras = [camcolor];
+								// green.scale.set(0.81,0.81);
+								// green.antialiasing = true;
+								// green.blend = BlendMode.OVERLAY;
+								// green.alpha = 0.2;
+								// add(green);
+								// FlxTween.tween(green, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
 							
-
+					#end
 						
 						
 					case 3:
 						animToPlay = 'singRIGHT';
-								var red = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/RIGHT LIGHT', 'shared'));
-								red.screenCenter();
-								red.cameras = [camcolor];
-								red.scale.set(0.81,0.81);
-								red.antialiasing = true;
-								red.blend = BlendMode.OVERLAY;
-								red.alpha = 0.2;
-								add(red);
+						#if !perfonmance
+								// var red = new FlxSprite().loadGraphic(Paths.image('CGNoteLight/RIGHT LIGHT', 'shared'));
+								// red.screenCenter();
+								// red.cameras = [camcolor];
+								// red.scale.set(0.81,0.81);
+								// red.antialiasing = true;
+								// red.blend = BlendMode.OVERLAY;
+								// red.alpha = 0.2;
+								// add(red);
 								
-								FlxTween.tween(red, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
+								// FlxTween.tween(red, {alpha: 0}, (Conductor.stepCrochet * 16 / 1000), {ease: FlxEase.quadInOut});
 							
-
+						#end
 
 						
 				}

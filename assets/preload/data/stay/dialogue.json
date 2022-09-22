@@ -1,25 +1,18 @@
 {
 	"dialogue": [
 		{
-			"expression": "pissed",
-			"text": "Man I'm losing again...\\nI can't believe you sing so very good.",
-			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "tsau"
+			"speed": 0.025,
+			"portrait": "tsau",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "damn bro idunohaodidudoaowtisstufbutitsrlly\\ncoolbruviaingonlye"
 		},
 		{
-			"expression": "pissed",
-			"text": "You are very tigh bars kid",
+			"speed": 0.04,
+			"portrait": "tsau",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "tsau"
-		},
-		{
-			"expression": "pissed",
-			"text": "I give this last song to you with all my love....",
-			"boxState": "normal",
-			"speed": 0.075,
-			"portrait": "tsau"
+			"expression": "talk",
+			"text": "I need to take a rest bruv but anewaes\\nLets sing sum las short song!"
 		}
 	]
 }
